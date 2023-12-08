@@ -1,0 +1,12 @@
+[package]
+name = "classreader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cafebabe = "0.6.1"
+clap = { version = "4.4.11", features = ["derive"] }
+color-eyre = "0.6.2"
+eyre = "0.6.9"

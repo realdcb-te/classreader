@@ -1,0 +1,14 @@
+#+TITLE: ClassReader: A Set of Utilities for Reading Java Class Files
+#+STARTUP: showall
+#+OPTIONS: toc:nil ^:{}
+
+This is a small collection of utilities for reading Java class files. The impetus for writing them was to improve the
+performance of collecting metadata over a large set of Java files. Class loading is done with the [[https://crates.io/crates/cafebabe][cafebabe]] crate, which means
+that newer versions of class files may not load correctly if =cafebabe= doesn't support them.
+
+* Utilities
+
+** class\under{}version
+
+Reads and outputs the "major.minor" version of the provided class file. 
+
